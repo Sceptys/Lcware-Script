@@ -342,7 +342,7 @@ end
         do
             Visuals:CreateSection("Indicators")
             local Enabled = false
-            local Messages = {"BUM!","Thump!","Wham!","Hit!","Smack!","Bang!","Pop!","Boom!", "Scepty loves kids", "Kabam!", "Skuuuura!", "Ablam!", "Pha pha!", "inf"}
+            local Messages = {"Cum😵","Thump!","Wham!","Hit!","Smack!","Bang!","Pop!","Boom!", "Scepty loves kids", "Kabam!", "Skuuuura!", "Ablam!", "Pha pha!", "AAAAOOAOAOAO",   "get real",  "bedwars devs are retarded", "inf"}
             local old
             local DamageIndicatorst = Visuals:CreateToggle({
                 Name = "Custom Damage Indicators",
