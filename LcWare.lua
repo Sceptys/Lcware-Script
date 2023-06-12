@@ -7,7 +7,7 @@ if not isfolder("LcWare") then
 end
 
         --defining the UiLib
-        local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/UiLib.lua'))()
+        local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/UiLib.lua'))()
 
         --loading menu
         local Window = Rayfield:CreateWindow({
@@ -39,7 +39,7 @@ end
         Notification.new("warning", "YOu died", "Imagine dying bozo.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
         Notification.new("message", "Message Heading", "Message body message.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
         ]]
-        local Notification = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/Notifs.lua'))()
+        local Notification = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/Notifs.lua'))()
 
         --end of notifications
 
@@ -305,7 +305,7 @@ end
 
         --ArrayList
 
-        local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/ArrayList.lua"))()
+        local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/ArrayList.lua"))()
         shared["CometConfigs"] = {
             Enabled = true
         }
@@ -629,7 +629,7 @@ end
                             end
                             shared.con:Disconnect()
                         end)
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/Textures.lua"))()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/Textures.lua"))()
                     else
                         disabled("TexturePack", "TexturePack has been set to disabled", 1)
                         array.remove("TexturePack")
@@ -1640,7 +1640,7 @@ end
                         if lplr.leaderstats.Bed.Value ~= "✅" then
                             local sound = Instance.new("Sound")
                             sound.Parent = workspace
-                            writefile("LcWare/Sound/mc/bedbroken.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/bedbroken.mp3"))
+                            writefile("LcWare/Sound/mc/bedbroken.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/bedbroken.mp3"))
                             sound.SoundId = getasset("LcWare/Sound/mc/bedbroken.mp3") -- path to where ever the sound is in ur workspace
                             sound:Play()
                             wait(7)
