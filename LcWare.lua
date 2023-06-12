@@ -7,7 +7,7 @@ if not isfolder("LcWare") then
 end
 
         --defining the UiLib
-        local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/UiLib.lua'))()
+        local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/UiLib.lua'))()
 
         --loading menu
         local Window = Rayfield:CreateWindow({
@@ -39,7 +39,7 @@ end
         Notification.new("warning", "YOu died", "Imagine dying bozo.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
         Notification.new("message", "Message Heading", "Message body message.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
         ]]
-        local Notification = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/Notifs.lua'))()
+        local Notification = loadstring(game:HttpGet('https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/Notifs.lua'))()
 
         --end of notifications
 
@@ -305,7 +305,7 @@ end
 
         --ArrayList
 
-        local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/ArrayList.lua"))()
+        local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/ArrayList.lua"))()
         shared["CometConfigs"] = {
             Enabled = true
         }
@@ -629,7 +629,7 @@ end
                             end
                             shared.con:Disconnect()
                         end)
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/Textures.lua"))()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/Textures.lua"))()
                     else
                         disabled("TexturePack", "TexturePack has been set to disabled", 1)
                         array.remove("TexturePack")
@@ -1586,7 +1586,7 @@ end
             })
             local AnimationsMode = Combat:CreateDropdown({
                 Name = "Animation Type",
-                Options = {"Normal", "Slow", "New", "VerticalSpin", "Exhibition", "ExhibitionOld"},
+                Options = {"VapeAnim", "Slow", "New", "VerticalSpin", "Exhibition", "ExhibitionOld"},
                 CurrentOption = "ExhibitionOld",
                 Flag = "AnimationModeDropDown", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
                 Callback = function(Option)
@@ -1640,8 +1640,8 @@ end
                         if lplr.leaderstats.Bed.Value ~= "✅" then
                             local sound = Instance.new("Sound")
                             sound.Parent = workspace
-                            writefile("MemzWare/Sound/mc/bedbroken.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/bedbroken.mp3"))
-                            sound.SoundId = getasset("MemzWare/Sound/mc/bedbroken.mp3") -- path to where ever the sound is in ur workspace
+                            writefile("LcWare/Sound/mc/bedbroken.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/bedbroken.mp3"))
+                            sound.SoundId = getasset("LcWare/Sound/mc/bedbroken.mp3") -- path to where ever the sound is in ur workspace
                             sound:Play()
                             wait(7)
                             sound:remove()
@@ -1652,8 +1652,8 @@ end
                                 p13:Connect(function(p14)
                                     local sound = Instance.new("Sound")
                                     sound.Parent = workspace
-                                    writefile("MemzWare/Sound/mc/bedbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/bedbreak.mp3"))
-                                    sound.SoundId = getasset("MemzWare/Sound/mc/bedbreak.mp3")-- path to where ever the sound is in ur workspace
+                                    writefile("LcWare/Sound/mc/bedbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/bedbreak.mp3"))
+                                    sound.SoundId = getasset("LcWare/Sound/mc/bedbreak.mp3")-- path to where ever the sound is in ur workspace
                                     sound:Play()
                                     wait(4)
                                     sound:remove()
@@ -1663,8 +1663,8 @@ end
                         local oldsounds = gamesound
                         local newsounds = gamesound
                         newsounds.UI_CLICK = "rbxassetid://535716488"
-                        writefile("MemzWare/Sound/mc/pickup.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/pickup.mp3"))
-                        newsounds.PICKUP_ITEM_DROP = getasset("MemzWare/Sound/mc/pickup.mp3")
+                        writefile("LcWare/Sound/mc/pickup.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/pickup.mp3"))
+                        newsounds.PICKUP_ITEM_DROP = getasset("LcWare/Sound/mc/pickup.mp3")
                         newsounds.KILL = "rbxassetid://1053296915"
                         newsounds.ERROR_NOTIFICATION = ""
                         newsounds.DAMAGE_1 = "rbxassetid://6361963422"
@@ -1673,20 +1673,20 @@ end
                         newsounds.DAMAGE_3 = "rbxassetid://6361963422"
                         newsounds.SWORD_SWING_1 = ""
                         newsounds.SWORD_SWING_2 = ""
-                        writefile("MemzWare/Sound/mc/buyitem.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/buyitem.mp3"))
-                        newsounds.BEDWARS_PURCHASE_ITEM = getasset("MemzWare/Sound/mc/buyitem.mp3")
+                        writefile("LcWare/Sound/mc/buyitem.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/buyitem.mp3"))
+                        newsounds.BEDWARS_PURCHASE_ITEM = getasset("LcWare/Sound/mc/buyitem.mp3")
                         newsounds.STATIC_HIT = "rbxassetid://6361963422"
                         newsounds.STONE_BREAK = "rbxassetid://6496157434"
-                        writefile("MemzWare/Sound/mc/woolbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/woolbreak.mp3"))
-                        newsounds.WOOL_BREAK = getasset("MemzWare/Sound/mc/woolbreak.mp3")
-                        writefile("MemzWare/Sound/mc/breakwood.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/breakwood.mp3"))
-                        newsounds.WOOD_BREAK = getasset("MemzWare/Sound/mc/breakwood.mp3")
-                        writefile("MemzWare/Sound/mc/glassbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/glassbreak.mp3"))
-                        newsounds.GLASS_BREAK = getasset("MemzWare/Sound/mc/glassbreak.mp3")
-                        writefile("MemzWare/Sound/mc/tnthiss.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/tnthiss.mp3"))
-                        newsounds.TNT_HISS_1 = getasset("MemzWare/Sound/mc/tnthiss.mp3")
-                        writefile("MemzWare/Sound/mc/tntexplode.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzwareAllahLeak/main/tntexplode.mp3"))
-                        newsounds.TNT_EXPLODE_1 = getasset("MemzWare/Sound/mc/tntexplode.mp3")
+                        writefile("LcWare/Sound/mc/woolbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/woolbreak.mp3"))
+                        newsounds.WOOL_BREAK = getasset("LcWare/Sound/mc/woolbreak.mp3")
+                        writefile("LcWare/Sound/mc/breakwood.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/breakwood.mp3"))
+                        newsounds.WOOD_BREAK = getasset("LcWare/Sound/mc/breakwood.mp3")
+                        writefile("LcWare/Sound/mc/glassbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/glassbreak.mp3"))
+                        newsounds.GLASS_BREAK = getasset("LcWare/Sound/mc/glassbreak.mp3")
+                        writefile("LcWare/Sound/mc/tnthiss.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/tnthiss.mp3"))
+                        newsounds.TNT_HISS_1 = getasset("LcWare/Sound/mc/tnthiss.mp3")
+                        writefile("LcWare/Sound/mc/tntexplode.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/tntexplode.mp3"))
+                        newsounds.TNT_EXPLODE_1 = getasset("LcWare/Sound/mc/tntexplode.mp3")
                         gamesound = newsounds
                     else
                         array.Remove("MC sounds")
