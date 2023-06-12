@@ -1652,7 +1652,7 @@ end
                                 p13:Connect(function(p14)
                                     local sound = Instance.new("Sound")
                                     sound.Parent = workspace
-                                    writefile("LcWare/Sound/mc/bedbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/bedbreak.mp3"))
+                                    writefile("LcWare/Sound/mc/bedbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/bedbreak.mp3"))
                                     sound.SoundId = getasset("LcWare/Sound/mc/bedbreak.mp3")-- path to where ever the sound is in ur workspace
                                     sound:Play()
                                     wait(4)
