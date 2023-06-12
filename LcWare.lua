@@ -1663,7 +1663,7 @@ end
                         local oldsounds = gamesound
                         local newsounds = gamesound
                         newsounds.UI_CLICK = "rbxassetid://535716488"
-                        writefile("LcWare/Sound/mc/pickup.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/pickup.mp3"))
+                        writefile("LcWare/Sound/mc/pickup.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/pickup.mp3"))
                         newsounds.PICKUP_ITEM_DROP = getasset("LcWare/Sound/mc/pickup.mp3")
                         newsounds.KILL = "rbxassetid://1053296915"
                         newsounds.ERROR_NOTIFICATION = ""
@@ -1673,19 +1673,19 @@ end
                         newsounds.DAMAGE_3 = "rbxassetid://6361963422"
                         newsounds.SWORD_SWING_1 = ""
                         newsounds.SWORD_SWING_2 = ""
-                        writefile("LcWare/Sound/mc/buyitem.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/buyitem.mp3"))
+                        writefile("LcWare/Sound/mc/buyitem.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/buyitem.mp3"))
                         newsounds.BEDWARS_PURCHASE_ITEM = getasset("LcWare/Sound/mc/buyitem.mp3")
                         newsounds.STATIC_HIT = "rbxassetid://6361963422"
                         newsounds.STONE_BREAK = "rbxassetid://6496157434"
-                        writefile("LcWare/Sound/mc/woolbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/woolbreak.mp3"))
+                        writefile("LcWare/Sound/mc/woolbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/woolbreak.mp3"))
                         newsounds.WOOL_BREAK = getasset("LcWare/Sound/mc/woolbreak.mp3")
-                        writefile("LcWare/Sound/mc/breakwood.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/breakwood.mp3"))
+                        writefile("LcWare/Sound/mc/breakwood.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/breakwood.mp3"))
                         newsounds.WOOD_BREAK = getasset("LcWare/Sound/mc/breakwood.mp3")
-                        writefile("LcWare/Sound/mc/glassbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/glassbreak.mp3"))
+                        writefile("LcWare/Sound/mc/glassbreak.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/glassbreak.mp3"))
                         newsounds.GLASS_BREAK = getasset("LcWare/Sound/mc/glassbreak.mp3")
-                        writefile("LcWare/Sound/mc/tnthiss.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/tnthiss.mp3"))
+                        writefile("LcWare/Sound/mc/tnthiss.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/tnthiss.mp3"))
                         newsounds.TNT_HISS_1 = getasset("LcWare/Sound/mc/tnthiss.mp3")
-                        writefile("LcWare/Sound/mc/tntexplode.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/LcWareAllahLeak/main/tntexplode.mp3"))
+                        writefile("LcWare/Sound/mc/tntexplode.mp3",game:HttpGet("https://raw.githubusercontent.com/AllahbloxLeaks/MemzWareAllahLeak/main/tntexplode.mp3"))
                         newsounds.TNT_EXPLODE_1 = getasset("LcWare/Sound/mc/tntexplode.mp3")
                         gamesound = newsounds
                     else
