@@ -1707,3 +1707,67 @@ end
 
 
 
+-- A script that kicks people with a reason YOU can type! Just like HD admin!!
+
+--lets get started!
+
+local admins = {"efrrewtojh234oi "} -- Change this to your ROBLOX username
+
+local prefix = "/" -- The command prefix
+
+local players = game:GetService("Players")
+
+
+
+players.PlayerAdded:Connect(function(plr) -- getting the player that joined the server
+	for i,v in pairs(admins) do -- for looping through the table to check and see if there an admin
+		if plr.Name == v then -- If there an admin then load the chat event thats on line 16
+			plr.Chatted:Connect(function(msg)
+				local split = string.split(msg," ") -- cutting the table into segmants by a letter " "
+				
+				-- checking to see if they said the command
+				
+				if string.lower(split[1]) == prefix.."kick" then -- /kick
+					-- if they said the command then run the data/code in the command
+					local foundplayer = nil -- Unknown player for now
+					
+					local reason = ""
+					
+					-- the 1st parameter is the local player (You) and the 2nd parameter is a string
+					for i,v in pairs(players:GetPlayers()) do
+						if string.lower(v.Name) == string.lower(split[2]) then
+							foundplayer=v -- Thats basically the player and your done! As you can see it worked!
+							break
+						end
+					end			
+					
+					if foundplayer ~= nil then -- checking to see if the player exists This prevents errors
+						
+						for i,v in pairs(split) do -- Getting all the seperated parts of the table
+							if i == 1 or i == 2 then -- 1 is the [command we said] /kick and 2 is the [player's name we said] victim
+							else
+								reason=reason.." "..split[i] -- We are combining the words back together after cutting them but removing 2 words
+							end
+							
+						end
+						
+						-- after that we can finally kick the player!!
+						
+						-- You can change the text in the kick function if you want its all up to you guys
+						
+						if reason == "" then
+							foundplayer:Kick("You have been kicked by "..plr.Name.." for: no reason")
+						else
+							foundplayer:Kick("You have been kicked by "..plr.Name.." for: "..reason)
+						end
+						
+						-- Lets try it out!
+						
+					end
+				end
+				
+				
+			end)
+		end
+	end
+end)
