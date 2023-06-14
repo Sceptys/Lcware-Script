@@ -21,7 +21,7 @@ end
             },
             KeySystem = true,
             KeySettings = {
-                Title = "LcWare 🔥 V1.0",
+                Title = "LcWare Scepty Birthday!👺",
                 Subtitle = "Key System",
                 Note = "Enter the key you were whitelisted with!",
                 FileName = "KSNlknKLSkw20sKSskmlKSlilSmx",
