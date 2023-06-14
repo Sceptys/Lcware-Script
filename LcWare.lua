@@ -27,7 +27,7 @@ end
                 FileName = "KSNlknKLSkw20sKSskmlKSlilSmx",
                 SaveKey = true,
                 GrabKeyFromSite = false,
-                Key = "eunf^$!!(@&@*@(dnwn:)))!*!^nNHxhAfBfi2U';L;[y]434676fjfn./,.m!!!ii834u74gfjnugfkdndnd218716!&!%&!@#*&@&#@dfgjrffjhUkGewffnm4nmdgnmc@!*Y!@!&@!&ay23845ngwemnfnwef"
+                Key = "weufhvivffifwergfw;grfwe2435543kjhlbfelkjhgrlkjhbge"
             }
         })
 
